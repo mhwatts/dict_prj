@@ -1,0 +1,22 @@
+<div class="max-w-lg mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
+  <!-- Back to Main Page Link -->
+  <a routerLink="/landing" class="text-blue-600 hover:underline block mb-4">
+    ← Back to Main Page
+  </a>
+
+  <h2 class="text-2xl font-bold mb-4">Add / Edit Word</h2>
+
+  <input [(ngModel)]="word" type="text" placeholder="Enter word" class="w-full mb-4 p-2 border rounded" />
+
+  <button (click)="lookupWord()" class="w-full mb-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+    Lookup Word
+  </button>
+
+  <textarea [(ngModel)]="definition" placeholder="Definition will appear here"
+    class="w-full mb-4 p-2 border rounded h-32"></textarea>
+
+  <button class="w-full bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+    Add to Collection
+  </button>
+
+</div>
