@@ -1,0 +1,9 @@
+Django>=3.2
+# Auth and REST
+django-allauth
+dj-rest-auth
+djangorestframework
+# CORS (if used)
+django-cors-headers
+# Add any other dependencies below as needed
+requests

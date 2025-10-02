@@ -68,8 +68,9 @@ export class SignupComponent {
   constructor(private fb: FormBuilder, private auth: AuthService) {
     this.form = this.fb.group({
       username: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],   // 👈 include email
+      email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required],
+      confirmpassword: ['', Validators.required],
     });
   }
 
