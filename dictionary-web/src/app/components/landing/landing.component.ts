@@ -12,8 +12,8 @@ import { RouterModule } from '@angular/router';
 export class LandingComponent {
   constructor(private router: Router) { }
 
-  goToLogin() {
-    this.router.navigate(['/dictionary']);
+  goToWord() {
+    this.router.navigate(['/add-word']);
   }
 }
 

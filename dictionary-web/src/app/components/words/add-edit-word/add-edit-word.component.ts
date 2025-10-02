@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
@@ -13,7 +14,11 @@ export class AddEditWordComponent {
   word = '';
   definition = '';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
+
+  goToLanding() {
+    this.router.navigate(['/landing']);
+  }
 
   lookupWord() {
     if (!this.word) return;
