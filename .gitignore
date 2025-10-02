@@ -1,3 +1,49 @@
-node_modules
 dictionary-web/.gitignore
 dictionary-web/README.md
+
+# Django
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.db-journal
+*.swp
+*.bak
+*.tmp
+*.orig
+*.coverage
+*.egg-info/
+.env
+.env.*
+venv/
+ENV/
+
+# Angular
+node_modules/
+dist/
+build/
+.tmp/
+.angular/
+coverage/
+
+# System
+.DS_Store
+Thumbs.db
+*.~
+
+# VSCode
+.vscode/
+
+# Misc
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Ignore static build artifacts
+/static/
